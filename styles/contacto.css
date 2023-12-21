@@ -1,0 +1,128 @@
+@import url('general.css');
+@import url('header.css');
+
+section.contacto {
+    margin-top: 80px;
+}
+.content-text {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #0082b9e1, #6bbcffd5), url("../img/bg-jovenes.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.content-text .text-encab h2{
+    font-family: 'Raleway', sans-serif;
+    color: var(--white);
+    font-size: var(--fontSubtitulo);
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container-contact {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 30px;
+    padding: 60px 7%;
+    align-items: center;
+  }
+  
+  .form-contact {
+    max-width: 100%;
+  }
+  
+  .form-contact input,
+  .form-contact textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .form-contact button {
+    padding: 15px 10px;
+    width: 100%;
+  }
+
+  .image-container img {
+    max-width: 100%;
+  }
+
+  .group-fields .field {
+    margin-top: 10px;
+  } 
+
+  .group-fields {
+    display: grid;
+    width: 100%;
+  }
+
+  .group-fields input,
+  .group-fields textarea {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(184, 184, 184);
+  }
+
+  .group-fields textarea::placeholder,
+  .group-fields input::placeholder {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .group-fields textarea {
+    padding-left: 2px;
+  }
+
+  .group-flex { 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .group-fields button {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    background: var(--bgButton);
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1200px) {
+    .image-container img {
+        max-width: 100%;
+    }
+    .container-contact {
+    grid-template-columns: 1fr 400px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .container-contact {
+      grid-template-columns: 1fr;
+    }
+    .form-contact {
+      max-width: 100%; 
+    }
+    .image-container img {
+        max-width: 100%;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .group-flex { 
+      display: grid;
+      gap: 0px;
+    }
+  }
+  

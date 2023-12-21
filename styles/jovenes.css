@@ -1,0 +1,143 @@
+@import url('general.css');
+@import url('header.css');
+
+/* Encabezado */
+section.aspirantes-content {
+    margin-top: 80px;
+}
+.content-text {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #0082b9e1, #6bbcffd5), url("../img/bg-jovenes.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.content-text .text-encab h2{
+    font-family: 'Raleway', sans-serif;
+    color: var(--white);
+    font-size: var(--fontSubtitulo);
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Sombra (desplazamiento-x desplazamiento-y difuminado color) */
+}
+
+.content-text .text-encab p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--fontText);
+    color: var(--white);
+    margin-top: 5px;
+    font-weight: 500;    
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5); /* Sombra (desplazamiento-x desplazamiento-y difuminado color) */
+}
+
+/* Sección de Videos */
+.content-card-Asp {
+    padding: 30px 7%;
+}
+
+/* grilla de videos */
+
+.video-Asp {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (para videos de YouTube) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-Asp iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.grid-containerCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de card item */
+.grid-cardItem {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+}
+.grid-cardItem .video-Asp iframe {
+    overflow: hidden;
+}
+
+.grid-cardItem .info-Asp h4{
+    font-family: 'Raleway', sans-serif;
+    color: var(--dark);
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 13px;
+}
+
+.grid-cardItem .info-Asp h5 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--bluedark);
+    font-size: 18px;
+    font-weight: 500;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.grid-cardItem .info-carrer , .infoPerAsp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-cardItem .info-alu {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-cardItem .infoPerAsp {
+    margin-top: 20px;
+}
+
+.grid-cardItem .info-carrer span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    margin-top: 5px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.grid-cardItem .info-carrer h6{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.grid-cardItem button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:500;
+    background: var(--bgButton);
+    background-size: cover;
+    width: 100%;
+}
+
+.grid-cardItem a {
+    color: white;
+}

@@ -1,0 +1,101 @@
+@import url('../../styles/general.css');
+@import url('../../styles/header.css');
+
+.wrapper {
+    background-color: #f4f4f4;
+    padding: 45px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Estilos para los títulos de cada sección */
+.wrapper h1 {
+    font-size: var(--fontSubtitulo);
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario dentro del contenedor */
+.formulario-padrino {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos adicionales para el botón Enviar */
+.formulario-padrino button[type="submit"] {
+    background-color: var(--blueLight);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--fontText);
+    cursor: pointer;
+}
+
+/* Estilos adicionales para los botones de carga */
+.formulario-padrino button[type="submit"] {
+    background-color: var(--blueLight);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--fontText);
+    cursor: pointer;
+}
+
+.formulario-padrino button[type="submit"]:hover {
+    background-color: var(--bluedark);
+}
+
+/* Estilos para los campos de entrada */
+.formulario-padrino .form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas de los campos de entrada */
+.formulario-padrino label {
+    font-weight: bold;
+}
+
+/* Estilos para los campos de entrada de texto */
+.formulario-padrino input[type="text"],
+.formulario-padrino input[type="tel"],
+.formulario-padrino input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de enviar */
+
+.formulario-institucion button[type="submit"] {
+    background-color: var(--blueLight);
+    color: var(--white);
+    padding: 10px 200px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--fontText);
+    cursor: pointer;
+}
+
+.formulario-institucion button[type="submit"]:hover {
+    background-color: var(--bluedark);
+}
+
+.form-padrino button[type="submit"] {
+    background-color: var(--blueLight);
+    color: var(--white);
+    padding: 10px 200px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--fontText);
+    cursor: pointer;
+}
+
+.form-padrino button[type="submit"]:hover {
+    background-color: var(--bluedark);
+}

@@ -1,0 +1,132 @@
+@import url('general.css');
+
+/*Disposición de Cabecera*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 7%;
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(58, 58, 58, 0.3);
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.botones-nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav.nav {
+    margin-right: 14%;
+}
+
+.abrir-menu, 
+.cerrar-menu {
+    display: none;
+}
+
+/*Estilo de logo*/
+.logo {
+    height: 47px;
+}
+
+/*Estilos de menu de navgación*/
+.nav-list li a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: var(--black);
+    font-size: var(--fontP);
+}
+
+.nav-list li a.active {
+    color: var(--blueLight);
+}
+
+/*Estilo de boton*/
+.nav-list li a.button-link {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #fff;
+    font-size: var(--fontP);
+    font-family: 'Quicksand', sans-serif;
+    font-weight:500;
+    background: var(--bgButton);
+}
+
+.fa-hand-holding-heart, .fa-heart {
+    margin-right: 5px;
+    color: #fff;
+}
+
+@media screen and (max-width: 1300px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 30px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: var(--blueLight);
+        margin-right: 14%;
+    }
+
+    .cerrar-menu {
+        color: var(--white);
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 40px;
+        position: absolute;
+        height: 100vmax;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 30px 7%;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.678);
+        z-index: 3;
+    }
+
+    .botones-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: end;
+    }
+
+    nav.nav {
+        margin-right: 11.5%;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}

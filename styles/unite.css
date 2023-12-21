@@ -1,0 +1,109 @@
+@import url('general.css');
+@import url('header.css');
+
+.container-jov {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Encabezado de página/Titular */
+
+.container-jov .content {
+    padding: 30px 7%;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--black);
+    font-size: var(--fontS);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--fontText);
+    color: var(--black);
+    margin-top: 5px;
+}
+
+.grid-cards {
+    background: var(--bgButton);
+    background-size: cover;
+    display: block;
+}
+
+.grid-card-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 60px; /* Espacio entre elementos */
+    padding: 20px 9%;
+    margin-bottom: 40px;
+}
+
+.card-content {
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+/*Estilos de card*/
+
+.linea {
+    width: 100%; /* Opcional: ocupar todo el ancho disponible */
+    height: 1px; /* Altura de la línea */
+    background-color: rgb(158, 158, 158);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.card-content h4 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--bluedark);
+    font-size: 25px;
+    font-weight: 500;
+    font-weight: 600;
+}
+
+.card-content p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: var(--black);
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.card-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:500;
+    background: var(--bgButton);
+    background-size: cover;
+    width: 100%;
+}
+
+.card-content a {
+    color: white;
+}
+
+/* Cambios para responsive design */
+@media (max-width: 975px) {
+    .grid-card-content {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
+      gap: 30px; /* Espacio entre elementos */
+      padding: 20px 7%;
+    }
+
+}
+  
+@media (max-width: 810px) {
+    .grid-card-content {
+      grid-template-columns: 1fr; /* 1 columna en pantallas aún más pequeñas */
+      padding: 20px 7%;
+    }
+}

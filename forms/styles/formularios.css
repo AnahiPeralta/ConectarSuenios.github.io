@@ -1,0 +1,119 @@
+@import url('../../styles/general.css');
+@import url('../../styles/header.css');
+
+.headerOne {
+    margin-top: 80px;
+}
+
+.content-text .text-encab h2 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--white);
+    font-size: var(--fontSubtitulo);
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-text {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #0082b9e1, #6bbcffd5), url(../img/bg-jovenes.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.cont-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group, button.send {
+    display: grid;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.form-padrino {
+    padding: 5rem 8%;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--fontS);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+summary::marker {
+    color: #6BBCFF;
+}
+
+summary {
+    border-bottom: 1px solid #acacac;
+    padding: 15px 0px;
+    font-weight: 500;
+}
+
+.textOculto {
+    padding-top: 15px;
+    line-height: 22px;
+}
+
+.textOculto p {
+    margin-bottom: 5px;
+}
+
+button.send {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    background: var(--bgButton);
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.cont-1 input, .cont-1 select, .cont-1 textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 10px;
+    margin-top: 7px;
+}
+
+input:focus, select:focus {
+    border: 1px solid black !important;
+    outline: none !important;
+}
+
+input.candidateBlock:focus {
+    border: 1px solid rgb(184, 184, 184) !important;
+    outline: none !important;
+}
+
+@media (max-width: 900px) {
+    .container-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cont-1 {
+        display: contents;
+        width: 100%;
+    }
+}

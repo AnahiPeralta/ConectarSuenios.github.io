@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+     <!-- Favicon -->
+    <link rel="shortcut icon" href="img/icono.svg" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/727c1f1fd2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/logoCS.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="jovenes.html">Aspirantes</a></li>
+                <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+                <div class="botones-nav">
+                    <li><a href="unite.html" class="button-link"><i class="fa-solid fa-hand-holding-heart"></i>Quiero Colaborar</a></li>
+                    <li><a href="forms/Form_Voluntario.html" class="button-link"><i class="fa-solid fa-heart"></i>Ser voluntario</a></li>
+                    <li>
+                        <a href="signin.html" claas="icon-signin" target="_blank">
+                            <svg 
+                                style="color: #6BBCFF;"
+                                xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            </svg>
+                        </a>
+                    </li>      
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto">
+        <div class="container">
+            <div class="content-text">
+                <div class="text-encab">
+                    <h2>Contáctanos</h2>
+                </div>
+            </div>
+            <div class="container-contact">
+                <form id="form" class="form-contact" action="https://formspree.io/f/mqkrzbev" method="post">
+                    <div class="group">
+                        <div class="group-fields">
+                            <label for="nombre">Nombre y Apellido</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="  Nombre" required>
+                        </div>
+                    </div>
+                    <div class="group-flex">
+                        <div class="group-fields">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="  Teléfono" required>
+                        </div>
+                        <div class="group-fields">
+                            <label for="correo">Correo</label>
+                            <input type="email" id="correo" name="correo" placeholder="  Correo" required>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group-fields">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder=" Tu mensaje" required></textarea>
+                        </div>
+                    </div>
+                    <div class="group-fields">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+                <div class="image-container">
+                    <img src="https://www.nuevodiariodesalta.com.ar/public/images/noticias/69387-la-municipalidad-y-organizaciones-reactivaron-la-plaza-de-la-juventud.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+       <div class="footer">
+           <div class="footer-info">
+                <div class="integrantes">
+                    <h5>Integrantes del proyecto</h5>
+                    <ul>
+                        <a href="" target="_blank"><li><i class="fa-brands fa-linkedin"></i>Benitez Camila</li></a>
+                        <a href="" target="_blank"><li><i class="fa-brands fa-linkedin"></i>Fabian Milena</li></a>
+                        <a href="" target="_blank"><li><i class="fa-brands fa-linkedin"></i>Leiseca Yanina</li></a>
+                        <a href="" target="_blank"><li><i class="fa-brands fa-linkedin"></i>Peralta Anahi</li></a>
+                        <a href="" target="_blank"><li><i class="fa-brands fa-linkedin"></i>Sumbaine Fatima</li></a>
+                    </ul>
+                </div>
+                <div class="info-contac"> 
+                    <h5>Contáctanos</h5>                   
+                    <p><i class="fa-solid fa-phone"></i>(+54) 387 555-5666</p>
+                    <p><i class="fa-solid fa-envelope"></i>conectarsuenos@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Salta Capital</p>
+                </div>
+                <div class="nletter">
+                    <h5>Newsletter</h5>
+                    <p>Recibi todas las novedades</p>
+                    <div class="camp-mail">
+                        <input type="email" placeholder="Tu correo">
+                        <button><a href="">Suscribirme</a></button>
+                    </div>
+                </div>
+           </div>
+           <div class="redes">
+                <h5>Redes Sociales</h5>
+                <button><a href="https://www.facebook.com/profile.php?id=61550021374340"><i class="fa-brands fa-square-facebook"></i></a></button>
+                <button><a href="https://www.instagram.com/conectarsuenos2023/?fbclid=IwAR2FTpuPnHlDh66ztJgGseEaI9i2c3A48CtLy6QciQ9WkbgAKKERrVhVmYw"><i class="fa-brands fa-square-instagram"></i></a></button>
+                <button><a href="https://github.com/AnahiPeralta/ConectarSuenios"><i class="fa-brands fa-github"></i></a></button>
+            </div>
+           <div class="copyrigth">
+                <p>&copy; Conectar Sueños,2023. Todos los derechos reservados</p>
+           </div>
+        </div>
+    </footer>
+    <script>
+        const $form = document.querySelector('#form')
+        $form.addEventListener('submit', handlesubmit)
+        async function handlesubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            if (response.ok) {
+                this.reset()
+                alert('Gracias por contactarte, te escribiremos pronto!')
+            }
+        }
+    </script>
+    <script src="./scripts/header.js"></script>
+</body>
+</html>

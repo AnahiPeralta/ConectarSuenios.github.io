@@ -1,0 +1,171 @@
+@import url('general.css');
+@import url('header.css');
+
+section.headerOne {
+    margin-top: 80px;
+}
+
+.content-encab {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #0082b9e1, #6bbcffd5), url("../img/bg-jovenes.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.content-encab .text-encab h2{
+    font-family: 'Raleway', sans-serif;
+    color: var(--white);
+    font-size: var(--fontSubtitulo);
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.content-encab .text-encab p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: var(--white);
+    margin-top: 15px;
+    padding: 0px 7%;
+    font-weight: 500;    
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5); 
+}
+
+/*Sección info Quienes Somos*/
+
+.container-info-qs {
+    padding: 40px 7%;
+}
+
+.container-One {
+    display: flex;
+    gap: 100px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--fontS);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container-One p{
+    line-height: 25px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/*Objetivos*/
+
+.list-obj {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columnas, mínimo 300px de ancho */
+  gap: 20px;
+}
+
+.obj-card {
+  background: linear-gradient(90deg, #0081b9, #4eafff);
+  padding: 30px 20px;
+  border-radius: 0px 40px 0px 40px;
+  color: white;
+}
+
+.obj-card h4{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.obj-card p {
+  line-height: 22px;
+}
+
+.container-Two h3{
+  margin-bottom: 20px;
+}
+
+/*Sección Equipo*/
+
+.iteam-team {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 40px 0px 40px 0px;
+  transition: 0.4s;
+}
+
+.iteam-team:hover {
+  background-color: #3f3f3f;
+  color: white;
+  transition: 0.4s;
+}
+
+.iteam-team .info-team h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.iteam-team .info-team p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 23px;
+}
+
+.iteam-team img {
+  width: 120px;
+  height: 120px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 60px;
+  row-gap: 30px;
+}
+
+.team-content {
+  padding: 40px 7%;
+}
+
+.redes-team a i {
+  color:#0398d8;
+  margin-right: 5px;
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.redes-team a i:hover {
+  color: #a3dbf3;
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+@media (max-width: 1200px) {
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+    .container-One {
+        display: grid;
+        gap: 0px;
+    }
+    .team {
+      grid-template-columns: 1fr; 
+      gap: 20px;
+    }
+}

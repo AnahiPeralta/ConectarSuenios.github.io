@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Radley:ital@1&family=Raleway:wght@400;500;600;700&display=swap');
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blueLight: #6BBCFF;
+    --bluedark: #1F9DD1;
+    --blue: rgb(0, 140, 255);
+    --icons: #26B4DF;
+    --white: rgb(255,255,255);
+    --black: rgb(0,0,0);
+    --bgButton: linear-gradient(90deg, rgb(0, 133, 255) 0%, rgb(126, 196, 253) 100%) 0px 0px / 256px 256px;
+    --fontP:16px;
+    --fontT: 70px;
+    --fontText: 20px;
+    --fontS: 32px;
+    --fontSubtitulo: 40px;
+    --grey: rgb(236, 236, 236);
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Radley', serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+li::marker{
+    content: none;
+}
+
+:is(nav, .menu, main) a{
+    text-decoration: none;
+}
